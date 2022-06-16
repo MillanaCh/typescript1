@@ -14,7 +14,7 @@ const TodoItem: FC<ITodoItem> = (props) => {
         checked={complete}
         onChange={() => toggleTodo(id)}
       />
-      {title}
+      <span>{title}</span>
       <button onClick={() => removeTodo(id)}>X</button>
     </div>
   );
